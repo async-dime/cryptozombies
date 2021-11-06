@@ -13,7 +13,7 @@ In addition to `public` and `private`, Solidity has two more types of visibility
 `external` is similar to `public`, except that these functions can ONLY be called outside the contract — they can't be called by other functions inside that contract. We'll talk about why you might want to use `external` vs `public` later.
 
 For declaring `internal` or `external` functions, the syntax is the same as `private` and public:
-```
+```js
 contract Sandwich {
   uint private sandwichesEaten = 0;
 

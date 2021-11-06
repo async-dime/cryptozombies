@@ -2,7 +2,7 @@
 Creating New Structs
 Remember our `Person` struct in the previous example?
 
-```
+```js
 struct Person {
   uint age;
   string name;
@@ -12,7 +12,7 @@ Person[] public people;
 
 Now we're going to learn how to create new `Person`s and add them to our `people` array.
 
-```
+```js
 // create a New Person:
 Person satoshi = Person(172, "Satoshi");
 
@@ -22,13 +22,13 @@ people.push(satoshi);
 
 We can also combine these together and do them in one line of code to keep things clean:
 
-```
+```js
 people.push(Person(16, "Vitalik"));
 ```
 
 Note that array.push() adds something to the end of the array, so the elements are in the order we added them. See the following example:
 
-```
+```js
 uint[] numbers;
 numbers.push(5);
 numbers.push(10);

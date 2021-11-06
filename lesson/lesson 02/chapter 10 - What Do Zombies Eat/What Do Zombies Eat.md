@@ -15,7 +15,7 @@ Don't worry — our game isn't actually going to hurt anyone's CryptoKitty. We'r
 For our contract to talk to another contract on the blockchain that we don't own, first we need to define an *interface*.
 
 Let's look at a simple example. Say there was a contract on the blockchain that looked like this:
-```
+```js
 contract LuckyNumber {
   mapping(address => uint) numbers;
 
@@ -33,7 +33,7 @@ This would be a simple contract where anyone could store their lucky number, and
 Now let's say we had an external contract that wanted to read the data in this contract using the `getNum` function.
 
 First we'd have to define an *interface* of the `LuckyNumber` contract:
-```
+```js
 contract NumberInterface {
   function getNum(address _myAddress) public view returns (uint);
 }
@@ -52,7 +52,7 @@ We'll get into actually calling the other contract's functions in the next lesso
 We've looked up the CryptoKitties source code for you, and found a function called `getKitty` that returns all the kitty's data, including its "genes" (which is what our zombie game needs to form a new zombie!).
 
 The function looks like this:
-```
+```js
 function getKitty(uint256 _id) external view returns (
     bool isGestating,
     bool isReady,

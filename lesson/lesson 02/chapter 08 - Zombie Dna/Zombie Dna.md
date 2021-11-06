@@ -4,7 +4,7 @@ Let's finish writing the `feedAndMultiply` function.
 The formula for calculating a new zombie's DNA is simple: the average between the feeding zombie's DNA and the target's DNA.
 
 For example:
-```
+```js
 function testDnaSplicing() public {
   uint zombieDna = 2222222222222222;
   uint targetDna = 4444444444444444;

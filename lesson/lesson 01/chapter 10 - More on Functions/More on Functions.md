@@ -4,7 +4,7 @@ In this chapter, we're going to learn about function return values, and function
 #### Return Values
 To return a value from a function, the declaration looks like this:
 
-```
+```js
 string greeting = "What's up dog";
 
 function sayHello() public returns (string memory) {
@@ -19,11 +19,13 @@ The above function doesn't actually change state in Solidity — e.g. it doesn't
 
 So in this case we could declare it as a view function, meaning it's only viewing the data but not modifying it:
 
-`function sayHello() public view returns (string memory) {`  
+```js
+function sayHello() public view returns (string memory) {
+```  
 
 Solidity also contains pure functions, which means you're not even accessing any data in the app. Consider the following:
 
-```
+```js
 function _multiply(uint a, uint b) private pure returns (uint) {
   return a * b;
 }

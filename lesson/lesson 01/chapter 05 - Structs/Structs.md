@@ -1,6 +1,6 @@
 # Chapter 5: Structs
 Sometimes you need a more complex data type. For this, Solidity provides structs:
-```
+```csharp
 struct Person {
   uint age;
   string name;

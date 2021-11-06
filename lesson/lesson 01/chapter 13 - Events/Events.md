@@ -4,7 +4,7 @@ Our contract is almost finished! Now let's add an **event**.
 **Events** are a way for your contract to communicate that something happened on the blockchain to your app front-end, which can be 'listening' for certain events and take action when they happen.
 
 Example:
-```
+```js
 // declare the event
 event IntegersAdded(uint x, uint y, uint result);
 

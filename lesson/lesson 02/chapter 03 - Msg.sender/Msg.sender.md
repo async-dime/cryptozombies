@@ -9,7 +9,7 @@ In Solidity, there are certain global variables that are available to all functi
   Note: In Solidity, function execution always needs to start with an external caller. A contract will just sit on the blockchain doing nothing until someone calls one of its functions. So there will always be a `msg.sender`.
 
 Here's an example of using `msg.sender` and updating a `mapping`:
-```
+```js
 mapping (address => uint) favoriteNumber;
 
 function setMyNumber(uint _myNumber) public {
@@ -34,7 +34,7 @@ Let's update our `_createZombie` method from lesson 1 to assign ownership of the
   2. Second, let's increase `ownerZombieCount` for this `msg.sender`.
 
 In Solidity, you can increase a uint with ++, just like in javascript:
-```
+```js
 uint number = 0;
 number++;
 // `number` is now `1`

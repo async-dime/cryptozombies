@@ -8,7 +8,7 @@ Math in Solidity is pretty straightforward. The following operations are the sam
   - Modulus / remainder: x % y (for example, 13 % 5 is 3, because if you divide 5 into 13, 3 is the remainder)  
   
 Solidity also supports an exponential operator (i.e. "x to the power of y", x^y):
-```
+```js
 uint x = 5 ** 2; // equal to 5^2 = 25
 ```
 

@@ -2,7 +2,7 @@
 
 A function declaration in solidity looks like the following:
 
-```
+```js
 function eatHamburgers(string memory _name, uint _amount) public {
 
 }
@@ -21,7 +21,7 @@ Note: It's convention (but not required) to start function parameter variable na
 
 You would call this function like so:
 
-```
+```js
 eatHamburgers("vitalik", 100);
 ```
 

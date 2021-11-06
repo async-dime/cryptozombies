@@ -4,7 +4,7 @@ Whoa! You'll notice we just cleaned up the code to the right, and you now have t
 Our code was getting pretty long, so we split it up into multiple files to make it more manageable. This is normally how you will handle long codebases in your Solidity projects.
 
 When you have multiple files and you want to import one file into another, Solidity uses the `import` keyword:
-```
+```js
 import "./someothercontract.sol";
 
 contract newContract is SomeOtherContract {

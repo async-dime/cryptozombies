@@ -20,7 +20,7 @@ So we can use it as a unique ID for ownership of our zombies. When a user create
 In Lesson 1 we looked at **structs** and **arrays**. **Mappings** are another way of storing organized data in Solidity.
 
 Defining a mapping looks like this:
-```
+```js
 // For a financial app, storing a uint that holds the user's account balance:
 mapping (address => uint) public accountBalance;
 // Or could be used to store / lookup usernames based on userId

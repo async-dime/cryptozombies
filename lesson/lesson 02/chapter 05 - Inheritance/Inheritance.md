@@ -2,7 +2,7 @@
 Our game code is getting quite long. Rather than making one extremely long contract, sometimes it makes sense to split your code logic across multiple contracts to organize the code.
 
 One feature of Solidity that makes this more manageable is contract **inheritance**:
-```
+```js
 contract Doge {
   function catchphrase() public returns (string memory) {
     return "So Wow CryptoDoge";

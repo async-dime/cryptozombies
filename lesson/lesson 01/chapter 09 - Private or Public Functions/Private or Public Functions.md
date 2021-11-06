@@ -5,7 +5,7 @@ Obviously this isn't always desirable, and can make your contract vulnerable to 
 
 #### Let's look at how to declare a private function:
 
-```
+```js
 uint[] numbers;
 
 function _addToArray(uint _number) private {

@@ -9,7 +9,7 @@ Think of it like your computer's hard disk vs RAM.
 Most of the time you don't need to use these keywords because Solidity handles them by default. State variables (variables declared outside of functions) are by default `storage` and written permanently to the blockchain, while variables declared inside functions are `memory` and will disappear when the function call ends.
 
 However, there are times when you do need to use these keywords, namely when dealing with **structs** and **arrays** within functions:
-```
+```js
 contract SandwichFactory {
   struct Sandwich {
     string name;

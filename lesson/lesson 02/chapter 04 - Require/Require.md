@@ -6,7 +6,7 @@ Let's make it so each player can only call this function once. That way new play
 How can we make it so this function can only be called once per player?
 
 For that we use `require`. `require` makes it so that the function will throw an error and stop executing if some condition is not true:
-```
+```js
 function sayHiToVitalik(string memory _name) public returns (string memory) {
   // Compares if _name equals "Vitalik". Throws an error and exits if not true.
   // (Side note: Solidity doesn't have native string comparison, so we

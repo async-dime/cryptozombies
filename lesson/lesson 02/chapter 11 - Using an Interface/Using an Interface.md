@@ -1,12 +1,12 @@
 # Chapter 11: Using an Interface
 Continuing our previous example with `NumberInterface`, once we've defined the interface as:
-```
+```js
 contract NumberInterface {
   function getNum(address _myAddress) public view returns (uint);
 }
 ```
 We can use it in a contract as follows:
-```
+```js
 contract MyContract {
   address NumberInterfaceAddress = 0xab38... 
   // ^ The address of the FavoriteNumber contract on Ethereum

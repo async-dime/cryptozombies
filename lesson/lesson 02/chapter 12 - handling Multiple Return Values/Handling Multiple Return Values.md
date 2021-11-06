@@ -1,6 +1,6 @@
 # Chapter 12: Handling Multiple Return Values
 This `getKitty` function is the first example we've seen that returns multiple values. Let's look at how to handle them:
-```
+```js
 function multipleReturns() internal returns(uint a, uint b, uint c) {
   return (1, 2, 3);
 }

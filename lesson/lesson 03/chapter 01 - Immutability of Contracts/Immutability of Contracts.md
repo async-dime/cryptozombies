@@ -22,9 +22,9 @@ For example, instead of hard coding the CryptoKitties contract address into our 
 
 Let's update our code from Lesson 2 to be able to change the CryptoKitties contract address.
 
-1. Delete the line of code where we hard-coded ckAddress.
-2. Change the line where we created kittyContract to just declare the variable — i.e. don't set it equal to anything.
-3. Create a function called setKittyContractAddress. It will take one argument, \_address (an address), and it should be an external function.
-4. Inside the function, add one line of code that sets kittyContract equal to KittyInterface(\_address).
+1. Delete the line of code where we hard-coded `ckAddress`.
+2. Change the line where we created `kittyContract` to just declare the variable — i.e. don't set it equal to anything.
+3. Create a function called `setKittyContractAddress`. It will take one argument, `_address` (an `address`), and it should be an `external` function.
+4. Inside the function, add one line of code that sets `kittyContract` equal to `KittyInterface(_address)`.
 
 Note: If you notice a security hole with this function, don't worry — we'll fix it in the next chapter ;)
